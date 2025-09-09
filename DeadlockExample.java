@@ -1,4 +1,4 @@
-package DeadlockExample;
+package MultithreadingInJava;
 
 public class DeadlockExample {
 

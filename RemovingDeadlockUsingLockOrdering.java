@@ -1,4 +1,4 @@
-package DeadlockExample;
+package MultithreadingInJava;
 
 public class RemovingDeadlockUsingLockOrdering {
         
@@ -23,14 +23,14 @@ public class RemovingDeadlockUsingLockOrdering {
 	 });
 	 
 	 Thread t2 = new Thread(()->{
-	 synchronized(lock2){
+	 synchronized(lock1){
 	 System.out.println("Thread 2 is aquiring lock1 .");
 	 try{
 	 Thread.sleep(1000);
 	 }catch(InterruptedException ex){
        throw new RuntimeException();	 
 	 }
-	 synchronized(lock1){
+	 synchronized(lock2){
 	 System.out.println("Thread 2 is aquiring lock2.");}
 	 }
 	 });
