@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 🎯 QUICK INTERVIEW GUIDE: Lock Interface vs synchronized
+ *  QUICK INTERVIEW GUIDE: Lock Interface vs synchronized
  * 
  * 1. What is Lock Interface?
  *    - More flexible alternative to synchronized keyword
@@ -36,7 +36,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *    - Release lock in finally block
  *    - Consider using tryLock with timeout
  * 
- * 🚨 Common Interview Questions:
+ *  Common Interview Questions:
  * Q1: Difference between Lock and synchronized?
  * A1: Lock is more flexible, has timeout, can be interrupted
  * 
@@ -66,7 +66,7 @@ public class BasicLockExampleInPlaceOfSyncronized {
  * This implementation shows advanced locking features not available with synchronized keyword.
  */
 /**
- * 📝 PRACTICAL IMPLEMENTATION EXAMPLE
+ *  PRACTICAL IMPLEMENTATION EXAMPLE
  * 
  * Key Implementation Points:
  * 1. Lock Declaration: Always private final
@@ -87,7 +87,7 @@ class SbiAccount {
    private final Lock lock = new ReentrantLock();
 
    /**
-    * 🔒 Thread-Safe Withdrawal Implementation
+    *  Thread-Safe Withdrawal Implementation
     * 
     * Pattern Breakdown:
     * 1. Try to acquire lock with timeout
